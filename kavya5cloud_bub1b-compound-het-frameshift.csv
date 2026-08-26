@@ -1,5 +1,0 @@
-proband_id,chrom_1,pos_1,ref_1,alt_1,chrom_2,pos_2,ref_2,alt_2,epcr,finding_type,notes
-WGS_EX2312012,chr15,40425440,C,CTATA,chr15,40488950,C,CA,0.95,primary,Compound heterozygous frameshift variants in BUB1B causing MVA
-WGS_EX2312012,chr15,40447560,GAATAAATA,G,chr15,40425440,C,CTATA,0.85,primary,Alternative pair: complex deletion plus frameshift in BUB1B
-WGS_EX2312012,chr15,40447560,GAATAAATA,G,chr15,40488950,C,CA,0.8,primary,Alternative pair: complex deletion plus frameshift in BUB1B
-WGS_EX2312012,chr15,40492443,C,CTTATTA,,,,,0.3,secondary,In-frame insertion in BUB1B - likely benign
