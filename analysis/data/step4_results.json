@@ -1,0 +1,248 @@
+{
+  "structure": "AF-O60566-F1-model_v6.pdb",
+  "plddt_1002": 91.06,
+  "plddt_mean_992_1012": 91.45,
+  "window": [
+    {
+      "pos": 995,
+      "aa": "K",
+      "plddt": 92.44,
+      "sasa_full": 108.02,
+      "rsa_full": 0.458,
+      "sasa_dom": 108.02,
+      "rsa_dom": 0.458
+    },
+    {
+      "pos": 996,
+      "aa": "F",
+      "plddt": 94.94,
+      "sasa_full": 3.62,
+      "rsa_full": 0.015,
+      "sasa_dom": 3.62,
+      "rsa_dom": 0.015
+    },
+    {
+      "pos": 997,
+      "aa": "F",
+      "plddt": 93.94,
+      "sasa_full": 2.42,
+      "rsa_full": 0.01,
+      "sasa_dom": 2.42,
+      "rsa_dom": 0.01
+    },
+    {
+      "pos": 998,
+      "aa": "V",
+      "plddt": 92.25,
+      "sasa_full": 45.75,
+      "rsa_full": 0.263,
+      "sasa_dom": 45.75,
+      "rsa_dom": 0.263
+    },
+    {
+      "pos": 999,
+      "aa": "R",
+      "plddt": 93.75,
+      "sasa_full": 56.6,
+      "rsa_full": 0.207,
+      "sasa_dom": 56.6,
+      "rsa_dom": 0.207
+    },
+    {
+      "pos": 1000,
+      "aa": "I",
+      "plddt": 93.81,
+      "sasa_full": 2.14,
+      "rsa_full": 0.011,
+      "sasa_dom": 2.14,
+      "rsa_dom": 0.011
+    },
+    {
+      "pos": 1001,
+      "aa": "L",
+      "plddt": 91.56,
+      "sasa_full": 7.64,
+      "rsa_full": 0.038,
+      "sasa_dom": 7.64,
+      "rsa_dom": 0.038
+    },
+    {
+      "pos": 1002,
+      "aa": "N",
+      "plddt": 91.06,
+      "sasa_full": 31.5,
+      "rsa_full": 0.162,
+      "sasa_dom": 31.5,
+      "rsa_dom": 0.162
+    },
+    {
+      "pos": 1003,
+      "aa": "A",
+      "plddt": 88.0,
+      "sasa_full": 3.39,
+      "rsa_full": 0.026,
+      "sasa_dom": 3.39,
+      "rsa_dom": 0.026
+    },
+    {
+      "pos": 1004,
+      "aa": "N",
+      "plddt": 80.44,
+      "sasa_full": 103.44,
+      "rsa_full": 0.53,
+      "sasa_dom": 103.44,
+      "rsa_dom": 0.53
+    },
+    {
+      "pos": 1005,
+      "aa": "D",
+      "plddt": 82.19,
+      "sasa_full": 136.05,
+      "rsa_full": 0.705,
+      "sasa_dom": 136.05,
+      "rsa_dom": 0.705
+    },
+    {
+      "pos": 1006,
+      "aa": "E",
+      "plddt": 87.81,
+      "sasa_full": 91.67,
+      "rsa_full": 0.411,
+      "sasa_dom": 91.67,
+      "rsa_dom": 0.411
+    },
+    {
+      "pos": 1007,
+      "aa": "A",
+      "plddt": 91.06,
+      "sasa_full": 67.92,
+      "rsa_full": 0.527,
+      "sasa_dom": 67.92,
+      "rsa_dom": 0.527
+    },
+    {
+      "pos": 1008,
+      "aa": "T",
+      "plddt": 92.06,
+      "sasa_full": 10.1,
+      "rsa_full": 0.059,
+      "sasa_dom": 10.1,
+      "rsa_dom": 0.059
+    },
+    {
+      "pos": 1009,
+      "aa": "V",
+      "plddt": 93.88,
+      "sasa_full": 41.99,
+      "rsa_full": 0.241,
+      "sasa_dom": 41.99,
+      "rsa_dom": 0.241
+    },
+    {
+      "pos": 1010,
+      "aa": "S",
+      "plddt": 94.38,
+      "sasa_full": 57.25,
+      "rsa_full": 0.369,
+      "sasa_dom": 57.25,
+      "rsa_dom": 0.369
+    },
+    {
+      "pos": 1011,
+      "aa": "V",
+      "plddt": 94.69,
+      "sasa_full": 0.0,
+      "rsa_full": 0.0,
+      "sasa_dom": 0.0,
+      "rsa_dom": 0.0
+    },
+    {
+      "pos": 1012,
+      "aa": "L",
+      "plddt": 95.31,
+      "sasa_full": 0.0,
+      "rsa_full": 0.0,
+      "sasa_dom": 0.0,
+      "rsa_dom": 0.0
+    },
+    {
+      "pos": 1013,
+      "aa": "G",
+      "plddt": 94.19,
+      "sasa_full": 25.21,
+      "rsa_full": 0.242,
+      "sasa_dom": 25.21,
+      "rsa_dom": 0.242
+    },
+    {
+      "pos": 1014,
+      "aa": "E",
+      "plddt": 94.69,
+      "sasa_full": 81.93,
+      "rsa_full": 0.367,
+      "sasa_dom": 81.93,
+      "rsa_dom": 0.367
+    },
+    {
+      "pos": 1015,
+      "aa": "L",
+      "plddt": 95.69,
+      "sasa_full": 8.32,
+      "rsa_full": 0.041,
+      "sasa_dom": 8.32,
+      "rsa_dom": 0.041
+    }
+  ],
+  "benchmark": [
+    {
+      "pos": 727,
+      "aa": "R",
+      "plddt": 88.5,
+      "rsa_full": 0.061,
+      "rsa_dom": NaN
+    },
+    {
+      "pos": 814,
+      "aa": "R",
+      "plddt": 90.25,
+      "rsa_full": 0.156,
+      "rsa_dom": 0.156
+    },
+    {
+      "pos": 844,
+      "aa": "L",
+      "plddt": 85.88,
+      "rsa_full": 0.006,
+      "rsa_dom": 0.006
+    },
+    {
+      "pos": 909,
+      "aa": "I",
+      "plddt": 87.0,
+      "rsa_full": 0.029,
+      "rsa_dom": 0.029
+    },
+    {
+      "pos": 921,
+      "aa": "Q",
+      "plddt": 83.25,
+      "rsa_full": 0.011,
+      "rsa_dom": 0.311
+    },
+    {
+      "pos": 1002,
+      "aa": "N",
+      "plddt": 91.06,
+      "rsa_full": 0.162,
+      "rsa_dom": 0.162
+    },
+    {
+      "pos": 1012,
+      "aa": "L",
+      "plddt": 95.31,
+      "rsa_full": 0.0,
+      "rsa_dom": 0.0
+    }
+  ],
+  "verdict": "BURIED -> supports destabilisation hypothesis (A)"
+}

@@ -1,0 +1,37 @@
+# Analysis environment — recorded 2026-09-15 / 2026-09-16
+# Platform: macOS (Darwin 25.5.0), Apple Silicon (arm64)
+
+python           3.12.7   (Anaconda, /opt/anaconda3/bin/python3)
+biopython        1.88
+numpy            1.26.4
+pydssp           installed (version string not exposed by the package)
+bcftools         1.24
+curl             8.9.1 (arm64-apple-darwin20.0.0) libcurl/8.9.1 OpenSSL/3.6.4
+
+# NOT AVAILABLE in this environment (documented negative — analyses were
+# substituted or omitted accordingly, see round2_variant_characterisation.md):
+mkdssp / dssp    NOT INSTALLABLE (no darwin-arm64 build; conda salilab and pip both failed)
+                 -> SASA computed with Bio.PDB.SASA (Shrake-Rupley) instead;
+                    RSA normalised with Tien et al. 2013 max-ASA values
+FoldX            NOT LICENSED / NOT INSTALLED -> no FoldX ddG reported
+MD engine        NOT USED -> no molecular dynamics was performed; the protein-dynamics
+                    hypothesis (R3.5 row G) is therefore untested
+
+# Added 2026-09-24 for the Round 5 splice screen (installed into /opt/anaconda3):
+spliceai         1.3.1
+tensorflow       2.21.0
+keras            3.15.1
+pyfaidx          0.9.0.4
+pangolin         GitHub tkzeng/Pangolin (installed 2026-09-24)
+torch            2.9.1 (CPU)
+pyfastx          2.3.1
+PyVCF3           (provides the `vcf` module; upstream PyVCF is py<=3.6 only)
+gffutils         (GENCODE v44 chr15 -> gffutils DB)
+
+# NOTE ON ENVIRONMENT SIDE-EFFECTS
+# Installing tensorflow pulled protobuf 7.36.2 into the base anaconda env, which
+# pip reports as incompatible with pre-existing packages there:
+#     mediapipe 0.10.21 requires protobuf<5,>=4.25.3
+#     streamlit 1.37.1  requires protobuf<6,>=3.20 and rich<14
+# Those packages are unrelated to this project but may now misbehave. A dedicated
+# virtualenv would have avoided this; flagged rather than silently left.

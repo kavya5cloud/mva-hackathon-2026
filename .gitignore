@@ -1,6 +1,55 @@
-data/
+# Raw gated dataset (top-level only) — never commit
+/data/
 *.vcf.gz
 *.vcf.gz.tbi
 *.vcf
+*.fastq
+*.fastq.gz
+*.bam
+*.cram
+
 __pycache__/
 .DS_Store
+
+# --- Analysis evidence artifacts: DO commit -------------------------------
+# The bare pattern "data/" previously matched analysis/data/ at any depth and
+# silently excluded every evidence artifact. Re-include the non-sensitive ones.
+!analysis/data/
+!analysis/data/**
+
+# --- But NEVER commit patient genotype-level data -------------------------
+# These are derived from the GATED proband VCF and contain individual genotypes.
+# They are reproducible from the gated source via analysis/scripts/step0_verify_provenance.py.
+analysis/data/provenance/bub1b_region_*.vcf.gz
+analysis/data/provenance/bub1b_region_*.vcf.gz.tbi
+analysis/data/provenance/bub1b_locus_variants.tsv
+analysis/data/provenance/track1_window_GRCh38.tsv
+analysis/data/provenance/header_provenance.txt
+
+# Round 4: genotype-level screen outputs derived from the GATED proband VCF.
+# Reproducible via analysis/scripts/*.py; summaries live in the Markdown record.
+analysis/data/genomewide/*.tsv
+analysis/data/genomewide/*.log
+analysis/data/panel/panel_raw.vcf.gz*
+analysis/data/panel/panel_annotated.vcf.gz*
+analysis/data/panel/*.tsv
+analysis/data/panel/*.log
+analysis/data/bub1b_locus/*.vcf.gz*
+analysis/data/bub1b_locus/*.tsv
+analysis/data/bub1b_locus/*.log
+
+# AlphaFold model (691 KB, retrievable; md5 943e5596717db0424b1a020ae429e174)
+AF-O60566-F1-model_v6.pdb
+analysis/data/genomewide/_progress.txt
+
+# Splice screen (Round 5): genotype-level outputs from the GATED proband VCF.
+# Reproducible via analysis/scripts/step12*.py; see analysis/data/splicing/README.md
+analysis/data/splicing/*.vcf
+analysis/data/splicing/*.tsv
+analysis/data/splicing/*.json
+analysis/data/splicing/*.csv
+analysis/data/splicing/*.log
+
+# Round 6: phase audit output contains patient genotypes (GT/AD/DP/GQ).
+# The CNV/SV report contains no genotype-level data and IS committed.
+analysis/data/phase/PHASE_REPORT.md

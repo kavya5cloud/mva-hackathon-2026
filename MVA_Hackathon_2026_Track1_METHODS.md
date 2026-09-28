@@ -1,3 +1,20 @@
+> ## ⚠️ HISTORICAL DOCUMENT — READ THE ERRATUM FIRST
+>
+> This document is the **Track 1 methods record as originally submitted**. It is
+> preserved unmodified for provenance. A post-submission audit found a
+> **genome-build error**: the extraction interval `15:40400000-40500000` (§7.2) is
+> the *BUB1B* locus in **GRCh37**, applied to a **GRCh38** VCF, and has **zero
+> overlap** with *BUB1B* in GRCh38. The three prioritised candidates are real
+> proband variants but lie in *IVD*, *BAHD1* and a lncRNA — **not *BUB1B***.
+>
+> **Every compound-heterozygous *BUB1B* statement in this document is therefore
+> HISTORICAL and UNSUPPORTED.** See **§30 — Genome-Build / Provenance Erratum** at
+> the end of this file, and `analysis/TRACK1_SUBMISSION_ERRATUM.md`.
+>
+> Separately: the two variants analysed in Track 2 (`p.Leu737*`, `p.Asn1002Lys`)
+> **were verified present in the proband VCF** on 2026-09-16, but their **phase is
+> undetermined**.
+
 # MVA Hackathon 2026 — Track 1
 # Research-Grade Methods & Analysis Report
 
@@ -1110,6 +1127,13 @@ kavya5cloud_bub1b-compound-het-frameshift.csv
 https://github.com/kavya5cloud/mva-hackathon-2026
 ```
 
+## AI-assisted analysis
+
+AI-assisted analysis disclosure: Anthropic Claude Opus 5 and Claude Opus 5.5 were
+used via the Claude API with a Pro plan. Data sharing for model training was disabled.
+AI-assisted outputs were independently checked against the project's source data and
+evidence record.
+
 ---
 
 # 31. Reproducibility Checklist
@@ -1218,3 +1242,119 @@ Further evidence — particularly phasing, segregation, orthogonal confirmation,
 **Model:** `model1`  
 **Submission:** `kavya5cloud_bub1b-compound-het-frameshift.csv`  
 **Repository:** https://github.com/kavya5cloud/mva-hackathon-2026
+
+---
+
+# 30. Genome-Build / Provenance Erratum
+
+**Added 2026-09-16, after submission.** Nothing above this line has been altered.
+All original commands, tables and interpretations are preserved as the
+**HISTORICAL RECORD**. This section supplies the **CORRECTED INTERPRETATION**.
+
+Verification script: `analysis/scripts/step0_verify_provenance.py`. 
+Evidence: `analysis/data/provenance/`. Full record: `analysis/round2_variant_characterisation.md` §R3.1.
+
+## 30.1 HISTORICAL RECORD
+
+**Documented build** (§6, §Reference Genome, Reproducibility checklist):
+
+```text
+GRCh38
+```
+
+**Documented extraction command** (§7.2):
+
+```bash
+bcftools view \
+  -r 15:40400000-40500000 \
+  WGS_EX2312012_HGWCNDSX7.vcf.gz \
+  -o bub1b_region.vcf
+```
+
+**Documented result:** 36 variants; three prioritised candidates
+(`chr15:40425440 C>CTATA`, `chr15:40488950 C>CA`, `chr15:40447560 GAATAAATA>G`);
+primary hypothesis = a compound-heterozygous frameshift pair in *BUB1B* (EPCR 0.95).
+
+## 30.2 CORRECTED INTERPRETATION
+
+### The VCF is GRCh38 — the build statement was right
+
+| Evidence | Value |
+|---|---|
+| `##reference` | `GCA_000001405.15_GRCh38_no_alt_analysis_set_plus_hs38d1_maskedGRC_exclusions_v2_no_chr.fasta` |
+| `##contig=<ID=15,...>` | `length=101991189` → **GRCh38** (GRCh37 chr15 = 102,531,392) |
+| Contig naming | no `chr` prefix |
+
+### The extraction interval was GRCh37 — this is the error
+
+| Build | *BUB1B* span (Ensembl, verified 2026-09-15) | Overlap with `40,400,000–40,500,000` |
+|---|---|---|
+| **GRCh38** — the VCF's actual build | chr15:**40,160,984–40,221,137** | **0 bp — NO OVERLAP** |
+| GRCh37 | chr15:**40,453,224–40,513,337** | 46,770 bp |
+
+**The documented interval is the *BUB1B* locus in GRCh37, applied to a GRCh38
+VCF.** The pipeline executed exactly as written — re-running that command returns
+**36 variants**, matching §7.2 precisely — but the window does not contain *BUB1B*
+in GRCh38.
+
+### What the three candidates actually are
+
+All three are genuine, `PASS`-quality heterozygous variants in the proband. Their
+gene assignment in GRCh38 is not *BUB1B*:
+
+| Candidate | GRCh38 gene (VCF's build) | GRCh37 gene |
+|---|---|---|
+| `chr15:40425440 C>CTATA` | **IVD** | *no gene* |
+| `chr15:40488950 C>CA` | lncRNA **ENSG00000259536** | *BUB1B* |
+| `chr15:40447560 GAATAAATA>G` | **BAHD1** | *no gene* |
+
+**Why the original interpretation was problematic:** the primary hypothesis
+(§13, §17) required both leading candidates to be frameshift variants in *BUB1B*.
+Under the VCF's actual build, **neither is a *BUB1B* variant**. The
+compound-heterozygous *BUB1B* frameshift conclusion therefore does not follow from
+the data, independently of the separate fact that phase was never established
+(correctly conceded at §27.3).
+
+### The gated VCF resolves the issue — for the currently analysed variants
+
+Corrected extraction:
+
+```bash
+bcftools view -r 15:40158984-40223137 WGS_EX2312012_HGWCNDSX7.vcf.gz
+```
+
+returns **15** variants in the GRCh38 *BUB1B* locus, including both variants under
+analysis in Track 2:
+
+| Variant | GRCh38 | REF>ALT | FILTER | GT | DP | GQ | AD | VAF |
+|---|---|---|---|---|---|---|---|---|
+| c.2210T>G p.Leu737\* | 15:40,209,701 | T>G | PASS | 0/1 | 46 | 99 | 21,25 | 0.543 |
+| c.3006T>G p.Asn1002Lys | 15:40,220,612 | T>G | PASS | 0/1 | 28 | 99 | 15,13 | 0.464 |
+
+## 30.3 Provenance status
+
+| Item | Status |
+|---|---|
+| **p.Leu737\* provenance** | ✅ **VERIFIED PRESENT** in the proband VCF. REF/ALT match, PASS, GT 0/1, DP 46, GQ 99, VAF 0.543. |
+| **p.Asn1002Lys provenance** | ✅ **VERIFIED PRESENT** in the proband VCF. REF/ALT match, PASS, GT 0/1, DP 28, GQ 99, VAF 0.464. |
+| **Phase** | ❌ **UNDETERMINED.** Both unphased (`0/1`); no GATK PGT/PID phasing group links them; sites are 10,911 bp apart, beyond short-read reach. Trio or long-read sequencing required. |
+| **Original three candidates** | ✅ present in the VCF, but ❌ **not *BUB1B* variants** in GRCh38. |
+| **Original compound-het *BUB1B* frameshift conclusion** | ❌ **NOT SUPPORTED.** Superseded. |
+
+## 30.4 Lesson for the pipeline
+
+Add an assertion between the region query and any downstream interpretation:
+confirm the build from `##reference` / contig lengths, and confirm that the
+queried interval actually overlaps the intended gene **in that build**, before
+attributing any returned variant to that gene. `step0_verify_provenance.py`
+implements this check.
+
+## 30.5 Correction to the verification script itself
+
+An earlier revision of `step0_verify_provenance.py` queried `FORMAT/PS`
+unconditionally. `PS` is not declared in this VCF (GATK emits `PGT`/`PID`), so
+`bcftools query` exited non-zero with empty stdout, which the script misread as
+**"variant not present"** — a false negative that briefly and incorrectly
+suggested both variants were absent. The script now queries only FORMAT tags
+declared in the header and surfaces `bcftools` stderr instead of discarding it.
+The result above is from the corrected script.

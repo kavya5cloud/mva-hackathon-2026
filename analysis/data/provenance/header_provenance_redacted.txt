@@ -1,0 +1,12 @@
+##fileformat=VCFv4.2
+##contig=<ID=15,length=101991189,assembly=unknown>
+##reference=file://refGenome/GCA_000001405.15_GRCh38_no_alt_analysis_set_plus_hs38d1_maskedGRC_exclusions_v2_no_chr.fasta
+##reference=file://refGenome/genome.fasta
+##source=VariantFiltration
+# REDACTED COPY — safe to commit.
+# Contains reference/contig metadata only. The full header_provenance.txt (which
+# includes the GATK command line with internal dnanexus paths) and all
+# genotype-level TSV/VCF outputs are gitignored: they derive from the GATED
+# proband VCF. Regenerate them with:
+#   python3 analysis/scripts/step0_verify_provenance.py <proband.vcf.gz>
+# sample count: 1 (sample ID withheld from the committed copy)

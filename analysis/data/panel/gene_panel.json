@@ -1,0 +1,1006 @@
+{
+  "panels": [
+    {
+      "id": 290,
+      "name": "Familial rhabdomyosarcoma",
+      "version": "1.6",
+      "version_created": "2025-11-23T17:12:25.194616Z"
+    },
+    {
+      "id": 259,
+      "name": "Childhood solid tumours cancer susceptibility",
+      "version": "1.30",
+      "version_created": "2025-10-13T20:26:03.102864Z"
+    }
+  ],
+  "mva_brief": [
+    "BUB1B",
+    "CEP57",
+    "TRIP13",
+    "BUB1",
+    "CCDC84",
+    "KNL1",
+    "BUB3",
+    "MAD2L1",
+    "TTK",
+    "CENPE"
+  ],
+  "retrieved": "2026-09-16",
+  "genes": [
+    {
+      "symbol": "NRAS",
+      "ensembl_id": "ENSG00000213281",
+      "chrom": "1",
+      "start": 114704468,
+      "end": 114716775,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "GPR161",
+      "ensembl_id": "ENSG00000143147",
+      "chrom": "1",
+      "start": 168079542,
+      "end": 168137685,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "ALK",
+      "ensembl_id": "ENSG00000171094",
+      "chrom": "2",
+      "start": 29190995,
+      "end": 29921586,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "SOS1",
+      "ensembl_id": "ENSG00000115904",
+      "chrom": "2",
+      "start": 38962206,
+      "end": 39124345,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "MSH2",
+      "ensembl_id": "ENSG00000095002",
+      "chrom": "2",
+      "start": 47403067,
+      "end": 47663146,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "MSH6",
+      "ensembl_id": "ENSG00000116062",
+      "chrom": "2",
+      "start": 47695530,
+      "end": 47810109,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCL",
+      "ensembl_id": "ENSG00000115392",
+      "chrom": "2",
+      "start": 58159243,
+      "end": 58241410,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BUB1",
+      "ensembl_id": "ENSG00000169679",
+      "chrom": "2",
+      "start": 110635468,
+      "end": 110678098,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "ERCC3",
+      "ensembl_id": "ENSG00000163161",
+      "chrom": "2",
+      "start": 127257285,
+      "end": 127294188,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "DIS3L2",
+      "ensembl_id": "ENSG00000144535",
+      "chrom": "2",
+      "start": 231961245,
+      "end": 232344350,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCD2",
+      "ensembl_id": "ENSG00000144554",
+      "chrom": "3",
+      "start": 10026370,
+      "end": 10101937,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "VHL",
+      "ensembl_id": "ENSG00000134086",
+      "chrom": "3",
+      "start": 10141764,
+      "end": 10153676,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "RAF1",
+      "ensembl_id": "ENSG00000132155",
+      "chrom": "3",
+      "start": 12582101,
+      "end": 12664201,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "XPC",
+      "ensembl_id": "ENSG00000154767",
+      "chrom": "3",
+      "start": 14145145,
+      "end": 14178767,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "MLH1",
+      "ensembl_id": "ENSG00000076242",
+      "chrom": "3",
+      "start": 36992834,
+      "end": 37051505,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "PHOX2B",
+      "ensembl_id": "ENSG00000109132",
+      "chrom": "4",
+      "start": 41744082,
+      "end": 41748887,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "CENPE",
+      "ensembl_id": "ENSG00000138778",
+      "chrom": "4",
+      "start": 103105349,
+      "end": 103198463,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "MAD2L1",
+      "ensembl_id": "ENSG00000164109",
+      "chrom": "4",
+      "start": 120055623,
+      "end": 120067192,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "TRIP13",
+      "ensembl_id": "ENSG00000071539",
+      "chrom": "5",
+      "start": 892849,
+      "end": 919357,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN",
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "TERT",
+      "ensembl_id": "ENSG00000164362",
+      "chrom": "5",
+      "start": 1253147,
+      "end": 1295086,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "APC",
+      "ensembl_id": "ENSG00000134982",
+      "chrom": "5",
+      "start": 112707452,
+      "end": 112846239,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "NHP2",
+      "ensembl_id": "ENSG00000145912",
+      "chrom": "5",
+      "start": 178139872,
+      "end": 178153968,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCE",
+      "ensembl_id": "ENSG00000112039",
+      "chrom": "6",
+      "start": 35452315,
+      "end": 35467106,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "TTK",
+      "ensembl_id": "ENSG00000112742",
+      "chrom": "6",
+      "start": 80003887,
+      "end": 80043580,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "PMS2",
+      "ensembl_id": "ENSG00000122512",
+      "chrom": "7",
+      "start": 5970925,
+      "end": 6009130,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BRAF",
+      "ensembl_id": "ENSG00000157764",
+      "chrom": "7",
+      "start": 140719327,
+      "end": 140925199,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "WRN",
+      "ensembl_id": "ENSG00000165392",
+      "chrom": "8",
+      "start": 31033761,
+      "end": 31176138,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "NBN",
+      "ensembl_id": "ENSG00000104320",
+      "chrom": "8",
+      "start": 89924515,
+      "end": 90003228,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "RECQL4",
+      "ensembl_id": "ENSG00000160957",
+      "chrom": "8",
+      "start": 144511284,
+      "end": 144517890,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCG",
+      "ensembl_id": "ENSG00000221829",
+      "chrom": "9",
+      "start": 35073793,
+      "end": 35082444,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "PAX5",
+      "ensembl_id": "ENSG00000196092",
+      "chrom": "9",
+      "start": 36833269,
+      "end": 37034268,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCC",
+      "ensembl_id": "ENSG00000158169",
+      "chrom": "9",
+      "start": 95099054,
+      "end": 95426796,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "PTCH1",
+      "ensembl_id": "ENSG00000185920",
+      "chrom": "9",
+      "start": 95442980,
+      "end": 95517057,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "XPA",
+      "ensembl_id": "ENSG00000136936",
+      "chrom": "9",
+      "start": 97653139,
+      "end": 97697408,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "ELP1",
+      "ensembl_id": "ENSG00000070061",
+      "chrom": "9",
+      "start": 108866898,
+      "end": 108934414,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "TSC1",
+      "ensembl_id": "ENSG00000165699",
+      "chrom": "9",
+      "start": 132891348,
+      "end": 132946874,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "RET",
+      "ensembl_id": "ENSG00000165731",
+      "chrom": "10",
+      "start": 43077026,
+      "end": 43130351,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BMPR1A",
+      "ensembl_id": "ENSG00000107779",
+      "chrom": "10",
+      "start": 86755751,
+      "end": 86932825,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "PTEN",
+      "ensembl_id": "ENSG00000171862",
+      "chrom": "10",
+      "start": 87862638,
+      "end": 87971930,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "SUFU",
+      "ensembl_id": "ENSG00000107882",
+      "chrom": "10",
+      "start": 102503952,
+      "end": 102633535,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "SHOC2",
+      "ensembl_id": "ENSG00000108061",
+      "chrom": "10",
+      "start": 110917932,
+      "end": 111017314,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BUB3",
+      "ensembl_id": "ENSG00000154473",
+      "chrom": "10",
+      "start": 123154365,
+      "end": 123313144,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "HRAS",
+      "ensembl_id": "ENSG00000174775",
+      "chrom": "11",
+      "start": 532242,
+      "end": 537343,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "CDKN1C",
+      "ensembl_id": "ENSG00000129757",
+      "chrom": "11",
+      "start": 2883213,
+      "end": 2885775,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCF",
+      "ensembl_id": "ENSG00000183161",
+      "chrom": "11",
+      "start": 22622533,
+      "end": 22625823,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "WT1",
+      "ensembl_id": "ENSG00000184937",
+      "chrom": "11",
+      "start": 32387775,
+      "end": 32435885,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "DDB2",
+      "ensembl_id": "ENSG00000134574",
+      "chrom": "11",
+      "start": 47214435,
+      "end": 47240555,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "MEN1",
+      "ensembl_id": "ENSG00000133895",
+      "chrom": "11",
+      "start": 64803500,
+      "end": 64811294,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "CEP57",
+      "ensembl_id": "ENSG00000166037",
+      "chrom": "11",
+      "start": 95789965,
+      "end": 95837070,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "ATM",
+      "ensembl_id": "ENSG00000149311",
+      "chrom": "11",
+      "start": 108222788,
+      "end": 108369102,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "CENATAC",
+      "ensembl_id": "ENSG00000186166",
+      "chrom": "11",
+      "start": 118998051,
+      "end": 119015811,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ],
+      "note": "brief lists this gene as \"CENATAC / CCDC84\"; approved HGNC symbol is CENATAC"
+    },
+    {
+      "symbol": "CBL",
+      "ensembl_id": "ENSG00000110395",
+      "chrom": "11",
+      "start": 119206036,
+      "end": 119313926,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "KRAS",
+      "ensembl_id": "ENSG00000133703",
+      "chrom": "12",
+      "start": 25205246,
+      "end": 25326473,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "PTPN11",
+      "ensembl_id": "ENSG00000179295",
+      "chrom": "12",
+      "start": 112418351,
+      "end": 112509918,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BRCA2",
+      "ensembl_id": "ENSG00000139618",
+      "chrom": "13",
+      "start": 32315086,
+      "end": 32400268,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "RB1",
+      "ensembl_id": "ENSG00000139687",
+      "chrom": "13",
+      "start": 48303710,
+      "end": 48599436,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "ERCC5",
+      "ensembl_id": "ENSG00000134899",
+      "chrom": "13",
+      "start": 102845831,
+      "end": 102875995,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "DICER1",
+      "ensembl_id": "ENSG00000100697",
+      "chrom": "14",
+      "start": 95086228,
+      "end": 95158010,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BUB1B",
+      "ensembl_id": "ENSG00000156970",
+      "chrom": "15",
+      "start": 40160984,
+      "end": 40221137,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN",
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "KNL1",
+      "ensembl_id": "ENSG00000137812",
+      "chrom": "15",
+      "start": 40594002,
+      "end": 40664342,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "MVA_gene_set_from_brief"
+      ]
+    },
+    {
+      "symbol": "MAP2K1",
+      "ensembl_id": "ENSG00000169032",
+      "chrom": "15",
+      "start": 66386816,
+      "end": 66491656,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCI",
+      "ensembl_id": "ENSG00000140525",
+      "chrom": "15",
+      "start": 89243854,
+      "end": 89318091,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BLM",
+      "ensembl_id": "ENSG00000197299",
+      "chrom": "15",
+      "start": 90717340,
+      "end": 90816166,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "TSC2",
+      "ensembl_id": "ENSG00000103197",
+      "chrom": "16",
+      "start": 2047345,
+      "end": 2089491,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "ERCC4",
+      "ensembl_id": "ENSG00000175595",
+      "chrom": "16",
+      "start": 13920138,
+      "end": 13952348,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "PALB2",
+      "ensembl_id": "ENSG00000083093",
+      "chrom": "16",
+      "start": 23603158,
+      "end": 23641342,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "FANCA",
+      "ensembl_id": "ENSG00000187741",
+      "chrom": "16",
+      "start": 89726683,
+      "end": 89816977,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "TP53",
+      "ensembl_id": "ENSG00000141510",
+      "chrom": "17",
+      "start": 7661779,
+      "end": 7687546,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "NF1",
+      "ensembl_id": "ENSG00000196712",
+      "chrom": "17",
+      "start": 31094883,
+      "end": 31382116,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp290_rhabdomyosarcoma_GREEN",
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BRCA1",
+      "ensembl_id": "ENSG00000012048",
+      "chrom": "17",
+      "start": 43044292,
+      "end": 43170245,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "BRIP1",
+      "ensembl_id": "ENSG00000136492",
+      "chrom": "17",
+      "start": 61679139,
+      "end": 61863561,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "PRKAR1A",
+      "ensembl_id": "ENSG00000108946",
+      "chrom": "17",
+      "start": 68511740,
+      "end": 68551319,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "SMAD4",
+      "ensembl_id": "ENSG00000141646",
+      "chrom": "18",
+      "start": 51028528,
+      "end": 51085045,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "STK11",
+      "ensembl_id": "ENSG00000118046",
+      "chrom": "19",
+      "start": 1177558,
+      "end": 1228431,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "MAP2K2",
+      "ensembl_id": "ENSG00000126934",
+      "chrom": "19",
+      "start": 4090316,
+      "end": 4124238,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "SMARCA4",
+      "ensembl_id": "ENSG00000127616",
+      "chrom": "19",
+      "start": 10960824,
+      "end": 11079426,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "ERCC2",
+      "ensembl_id": "ENSG00000104884",
+      "chrom": "19",
+      "start": 45349773,
+      "end": 45370918,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "ERCC1",
+      "ensembl_id": "ENSG00000012061",
+      "chrom": "19",
+      "start": 45407333,
+      "end": 45479055,
+      "strand": -1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "SMARCB1",
+      "ensembl_id": "ENSG00000099956",
+      "chrom": "22",
+      "start": 23786931,
+      "end": 23838009,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    },
+    {
+      "symbol": "NF2",
+      "ensembl_id": "ENSG00000186575",
+      "chrom": "22",
+      "start": 29603520,
+      "end": 29698598,
+      "strand": 1,
+      "assembly": "GRCh38",
+      "sources": [
+        "PanelApp259_childhood_solid_tumour_GREEN"
+      ]
+    }
+  ],
+  "unresolved": []
+}
