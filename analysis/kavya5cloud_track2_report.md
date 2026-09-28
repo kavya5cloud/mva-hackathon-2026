@@ -56,7 +56,7 @@ AlphaMissense — but these are **supporting observations, not evidence of
 pathogenicity**, and no functional data of any kind exist for it. Our own
 mechanistic work argues against the obvious hypothesis: a ΔΔG predictor
 calibrated against four *BUB1B* variants with published abundance phenotypes —
-and correct on all four — scores N1002K as **neutral**, clustering it with the
+and correct on all four — scores N1002K at **−0.01**, clustering it with the
 known stable, WT-like Q921H rather than the destabilised group. A structural
 helix-cap model was proposed as an alternative, but a subsequent backbone φ/ψ
 check removed one of its supports. **The mechanism is UNRESOLVED.**
@@ -511,8 +511,8 @@ results were inspected and **were not altered afterwards**.
 
 Failed queries, access limitations and invalid query syntaxes are recorded in
 §R3.10 rather than omitted. **Open reproducibility gaps are listed there and are
-not yet closed** — most importantly, the DynaMut2 calls and the database queries
-were made ad-hoc and still need to be captured as scripts with saved raw responses.
+not yet closed.** Some database queries remain ad-hoc and their raw responses are
+not uniformly archived; these limitations are recorded in §R3.10.
 
 ### AI-assisted analysis
 
